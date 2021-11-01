@@ -17,7 +17,9 @@
 
 - The relevant custom code for reproducing the issue is in `/src/app/home/home.page.ts`
 - In the DevTools console is where you'll see evidence of the issue.
-- Logged to the console immediately will be a call to `Geolocation.checkPermissions()` with a result that looks like: `{ location: "prompt" }`
+- Logged to the console immediately will be a call to `Geolocation.checkPermissions()` with a result that looks like:
+  - `{ location: "prompt" }`
 - We then call `Geolocation.getCurrentPosition()` which causes the location permissions prompt already visible on the screen.
 - On the location permissions prompt, select `Approximate` location and either `While using the app` or `Only this time`.
-- An error from the `Geolocation.getCurrentPosition()` call will be logged to the console: `{ message: "Location permission was denied" }`
+- An error from the `Geolocation.getCurrentPosition()` call will be logged to the console:
+  - `{ message: "Location permission was denied" }`
